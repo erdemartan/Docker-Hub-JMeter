@@ -1,6 +1,5 @@
 FROM openjdk:8-jre AS build-env
 
-
 LABEL maintainer="Gokhan Sengun <gokhansengun@gmail.com>"
 
 ADD https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-4.0.zip /apache-jmeter.zip
