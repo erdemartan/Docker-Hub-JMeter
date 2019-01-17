@@ -15,7 +15,7 @@ COPY --from=build-env /usr/bin/jq /usr/bin/jq
 RUN ln -s /jmeter/bin/jmeter /usr/local/bin/jmeter
 
 # Copy plugins folder under ext folder
-COPY plugins/ /jmeter/lib/ext/
+COPY plugins/ /jmeter/lib/
 
 # Copy MSSQL and PostgreSQL JDBC Drivers
 COPY jdbc/postgresql-9.4.1209.jre7.jar /jmeter/lib/
